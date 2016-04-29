@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TrafficLight.Car">
+    <Position X="0.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAACAgAgAIAAIACBAAAAgUAAIAAAAAAAAAA=</HashCode>
+      <FileName>Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.CarStream" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>CarStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.CarTrafficLight">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="TrafficLight.TrafficLight" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="3.853" />
+        <Point X="9.75" Y="4.125" />
+        <Point X="13" Y="4.125" />
+        <Point X="13" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CarTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.ComplexCrossing">
+    <Position X="8.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkBAAAAAAgQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComplexCrossing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.Controller">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgMAAAAAAAAAFAAAAAAAAAQEAAAAAABAAAAAAAAU=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="ListOfGrids" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrafficLight.Crossing">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <AssociationLine Name="listOfStartingStreams" Type="TrafficLight.TrafficStream" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.125" Y="4.5" />
+        <Point X="8.125" Y="4.195" />
+        <Point X="6.16" Y="4.195" />
+        <Point X="6.16" Y="5.551" />
+        <Point X="2.75" Y="5.551" />
+        <Point X="2.75" Y="4.125" />
+        <Point X="3.75" Y="4.125" />
+        <Point X="3.75" Y="3.658" />
+        <Point X="3.5" Y="3.658" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="listOfTransitStreams" Type="TrafficLight.TrafficStream" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="4.5" />
+        <Point X="7.875" Y="4.195" />
+        <Point X="6.16" Y="4.195" />
+        <Point X="6.16" Y="5.551" />
+        <Point X="2.75" Y="5.551" />
+        <Point X="2.75" Y="4.125" />
+        <Point X="3.75" Y="4.125" />
+        <Point X="3.75" Y="3.787" />
+        <Point X="3.5" Y="3.787" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.272" Y="-0.102" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QEBAgAYACgAAgAAgAImCIBBiAABwIgAAIAACGABABhA=</HashCode>
+      <FileName>Crossing.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listOfNeighbours" />
+      <Field Name="listOfTrafficLights" />
+      <Field Name="listOfStartingStreams" />
+      <Field Name="listOfTransitStreams" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrafficLight.Grid">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAYBgAgAAACIEEAQDABAAAggIAAEAAAAAA=</HashCode>
+      <FileName>Grid.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="listOfCrossings" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrafficLight.PathCrossing" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAIAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PathNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.Pedestrian">
+    <Position X="2.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAgAgAAAAIAAJAAAAKQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pedestrian.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.PedestrianStream" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>PedestrianStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.PedestrianTrafficLight">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PedestrianTrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.Sensor">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAABAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sensor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="queue" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="TrafficLight.SimpleCrossing">
+    <Position X="5.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAAgAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SimpleCrossing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.TrafficLight">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAJAAAACQAAAAAAAAAAAIAAAACAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>TrafficLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.TrafficMember">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAgAAAAAAAAAAAAAACQAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrafficMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.TrafficStream">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACCAAAAAAAQABAAEAAAAAAAAAAAAAEAAAABAAAAgg=</HashCode>
+      <FileName>TrafficStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.Form1" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQI/0MACAFATAgKmSgUFoCIBAaIGABQAQhAABggAg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsSimulator.Lane" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lane.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLight.Program" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsSimulator.Properties.Resources" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrafficLightsSimulator.Properties.Settings" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
