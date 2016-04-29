@@ -10,4 +10,4 @@
 - User Interface (Valeria)
 - Cars and traffic lights (Alexey)
 - Grid and crossings (Vlad)
-- Pedestrians and additional actions (Alex)
+- Pedestrians, tabs and menu actions (Alex)
